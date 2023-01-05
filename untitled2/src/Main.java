@@ -1,54 +1,101 @@
 public class Main {
     public static void main(String[] args) {
 
-        var dog = 8.0;
-        System.out.println(dog);
-        dog = dog + 4;
-        System.out.println(dog);
-        dog = dog - 3.5;
-        System.out.println(dog);
-        var cat = 3.6;
-        System.out.println(cat);
-        cat = cat + 4;
-        System.out.println(cat);
-        cat = cat - 1.6;
-        System.out.println(cat);
-        var paper = 763789;
-        System.out.println(paper);
-        paper = paper + 4;
-        System.out.println(paper);
-        paper = paper - 7639;
-        System.out.println(paper);
-        var friend = 19;
-        System.out.println(friend);
-        friend = friend * 2;
-        System.out.println(friend);
-        friend = friend / 7;
-        System.out.println(friend);
-        var frog = 3.5;
-        System.out.println(frog);
-        frog = frog * 10;
-        System.out.println(frog);
-        frog = frog / 3.5;
-        System.out.println(frog);
-        frog = frog + 4;
-        System.out.println(frog);
+        byte tea = 3;
+        int coffee = 100;
+        short salt = 5;
+        long spoon = 10000;
+        float sugar = 1;
+        double sugarWeight = 45.50;
 
-        var boxer1Weight = 78.2;
-        var boxer2Weight = 82.7;
-        var totalWeight = boxer1Weight + boxer2Weight;
-        System.out.println ("Общий вес боксеров" + totalWeight);
-        var totalWeight1 = boxer2Weight - boxer1Weight;
-        System.out.println("Разница в весе боксеров" + totalWeight1 + "кг!");
-        var totalWeight2 = (boxer2Weight % boxer1Weight);
-        System.out.println("Разница в весе" + totalWeight2 + "кг!");
+        double a = 27.12;
+        long b = 987678965549L;
+        double c = 2.786;
+        short d = 569;
+        short e = -127;
+        short g = 27897;
+        byte h = 67;
 
-        var totalHours = 640;
-        var totalHoursforone = 8;
-        var totalStaff = (totalHours / totalHoursforone);
-        System.out.println("Всего работников в компании" + totalStaff + "человек!");
-        var totalStaff1 = 174;
-        var totalHoursforone1 = (totalHours / totalStaff1);
-        System.out.println ("Если в компании работает 174 человека,то всего" + totalHoursforone1 + "часов работы может поделено между сотрудниками!");
+        byte lydmilaPavlovna = 23;
+        byte annaSergeevna = 27;
+        byte ekaterinaAndreevna = 30;
+        short paper = 480;
+        int totalStudents = (lydmilaPavlovna + annaSergeevna + ekaterinaAndreevna);
+        System.out.println("Всего учеников" + totalStudents);
+        byte oneSheet = (byte) (paper / totalStudents);
+        System.out.println("На каждого ученика рассчитано" + oneSheet + "листов бумаги!");
+
+        byte oneMinute = 8;
+        byte twentyMinute = 20;
+        short bottleTwentyMinute = (short) (oneMinute*twentyMinute);
+        System.out.println("Бутылок за 20 минут будет" + bottleTwentyMinute);
+        short oneDay = 1440;
+        short bottleOneDay = (short) (oneMinute*oneDay);
+        System.out.println("Бутылок за сутки будет" + bottleOneDay);
+        short threeDay = 4320;
+        int bottleThreeDay = (int) (oneMinute * threeDay);
+        System.out.println("Бутылок за три дня будет" + bottleThreeDay);
+        int Month = 43200;
+        int bottleMonth = (int) (oneMinute * Month);
+        System.out.println("Бутылок за меясц будет" + bottleMonth);
+
+        byte totalCans = 120;
+        byte whitePaint = 2;
+        byte brownPaint = 4;
+        byte office = (byte) (totalCans/(whitePaint+brownPaint));
+        System.out.println("Классов в школе" + office);
+        byte cansWhite = (byte) (office * whitePaint);
+        byte cansBrown = (byte) (office * brownPaint);
+        System.out.println("В школе, где" + office + "классов, нужно" + cansWhite + "банок белой краски и" + cansBrown + "банок коричневой краски");
+
+        byte banans = 5;
+        byte milk = 105;
+        byte iceCream = 2;
+        byte egg = 4;
+        byte bananGram = 80;
+        byte milkGram = 105;
+        byte iceCreamGram = 100;
+        byte eggGram = 70;
+        short banans1 = (short) (banans*bananGram);
+        System.out.println("Бананов в граммах" + banans1);
+        short milk1 = (short) (milk + milkGram);
+        System.out.println("Молока в граммах" + milk1);
+        short iceCream1 = (short) (iceCream * iceCreamGram);
+        System.out.println("Мороженого в граммах" + iceCream1);
+        short egg1 = (short) (egg * eggGram);
+        System.out.println("Яиц в граммах" + egg1);
+        short Gram = (short) (banans1 + milk1 + iceCream1 + egg1);
+        System.out.println("Общее количество граммов" + Gram);
+        short kiloGram = 1000;
+        float kiloGram1 = (float) (Gram / kiloGram);
+        System.out.println("Общее количество в килограммах" + kiloGram1);
+
+        short weightLose = 7000;
+        short weight1 = 250;
+        short weight2 = 500;
+        byte days1 = (byte) (weightLose / weight1);
+        System.out.println("Дней нужно при скидывании по 250 грамм" + days1);
+        byte days2 = (byte) (weightLose / weight2);
+        System.out.println("Дней нужно при скидывании по 500 грамм" + days2);
+        byte averageNumberOfDays = (byte) ((days2 + days1) / 2);
+        System.out.println("Среднее количество дней для похудения" + averageNumberOfDays);
+
+        int Masha = 67760;
+        byte percent = 10;
+        int Masha1 = (Masha / percent);
+        int Masha2 = (Masha1 + Masha);
+        System.out.println("Маша теперь получает" + Masha2 + "рублей. Годовой доход вырос на" + Masha1 + "рублей");
+        int Denis = 83690;
+        int Denis1 = (Denis / percent);
+        int Denis2 = (Denis1 + Denis);
+        System.out.println("Денис теперь получает" + Denis2 + "рублей. Годовой доход вырос на" + Denis1 + "рублей");
+        int Kristina = 76230;
+        int Kristina1 = (Kristina / percent);
+        int Kristina2 = (Kristina1 + Kristina);
+        System.out.println("Кристина теперь получает" + Kristina2 + "рублей. Годовой доход вырос на" + Kristina1 + "рублей");
+
+
+
+
     }
 }
